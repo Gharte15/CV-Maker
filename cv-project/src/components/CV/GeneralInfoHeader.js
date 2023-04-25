@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material"
 
-export const GeneralInfoHeader = ({name}) => {
+export const GeneralInfoHeader = ({ name, onChange }) => {
   return(
     <Box
       sx={{

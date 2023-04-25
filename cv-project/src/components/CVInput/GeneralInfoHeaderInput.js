@@ -1,7 +1,7 @@
 import { Box, TextField } from "@mui/material"
 
 
-export const GeneralInfoHeaderInput = () => {
+export const GeneralInfoHeaderInput = ({ generalInfo, onChange }) => {
   return(
     <Box
       sx={{
@@ -9,7 +9,13 @@ export const GeneralInfoHeaderInput = () => {
         boxSizing: "border-box",
         padding:'12px'
       }}>
-      <TextField id="name" label="Name" variant="outlined" />
+      <TextField 
+        label="Name"
+        variant="outlined" 
+        name="name"
+        onChange={(e) => onChange(e)} 
+        value={generalInfo.name}
+      />
     </Box>
   )
 }
