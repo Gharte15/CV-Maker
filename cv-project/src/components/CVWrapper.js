@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material"
-import { CV } from "./CV/CV"
+import { CV } from "./CVOutput/CVOutput"
 import { CVInput } from "./CVInput/CVInput"
 import { useState } from "react"
 import CvData from "./utils/cvData"
