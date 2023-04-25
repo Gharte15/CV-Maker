@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material"
 
-export const GeneralInfoHeader = () => {
+export const GeneralInfoHeader = ({name}) => {
   return(
     <Box
       sx={{
@@ -12,7 +12,7 @@ export const GeneralInfoHeader = () => {
         p:2,
         pt:0.5
       }}>
-      <Typography variant="h5">Kamil Tumulec</Typography>
+      <Typography variant="h5">{name}</Typography>
     </Box>
   )
 }
